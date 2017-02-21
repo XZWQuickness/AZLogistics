@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_newst_order"
+        style="@style/match_wrap"
+        android:background="@drawable/personitem"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_01"
+            style="@style/wrap_content"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/iv_02"
+            style="@style/wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:layout_toLeftOf="@id/iv_02"
+            android:layout_toRightOf="@id/iv_01"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_createAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/time" />
+
+                <TextView
+                    android:id="@+id/tv_createDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/text_shallow_gray"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bangdan" />
+
+                <TextView
+                    android:id="@+id/tv_poundNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:textColor="@color/text_shallow_gray"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_weiwancheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="未完成,请在到达目的地后拍照确认"
+                android:textColor="@color/text_shallow_gray"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/ll_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_finishAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="江苏省徐州市永安路"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        style="@style/wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/time" />
+
+                    <TextView
+                        android:id="@+id/tv_finishDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="@color/text_shallow_gray"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_lin_01"
+        style="@style/lin"
+        android:layout_marginLeft="10dp">
+
+    </View>
+
+    <View
+        android:id="@+id/v_lin"
+        style="@style/lin"
+        android:layout_height="10dp"
+        android:background="@color/app_bg"
+        android:visibility="gone">
+
+    </View>
+
+</LinearLayout>

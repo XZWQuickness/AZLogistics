@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_login_white_lin"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            style="@style/wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_truckImg"
+                    style="@style/wrap_content"
+                    android:background="@drawable/max_car" />
+
+                <TextView
+                    android:id="@+id/tv_plateNum"
+                    style="@style/TextView"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="#3C3C3C"
+                    android:textSize="22dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_check"
+                    style="@style/wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_check"
+                    style="@style/TextView"
+                    android:layout_marginLeft="6dp"
+                    android:text=""
+                    android:textColor="#C8C8C8" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_check_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match"
+    android:orientation="vertical">
+
+    <include layout="@layout/top" />
+
+    <include layout="@layout/gary_lin" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_state"
+            style="@style/match_wrap"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_underway"
+                style="@style/TextView"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="进行中"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/tv_done"
+                style="@style/TextView"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="已完成"
+                android:textColor="@color/text_gray" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/lin"
+            android:layout_below="@id/ll_state" />
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:layout_below="@id/ll_state"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/v_01"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/red" />
+
+            <View
+                android:id="@+id/v_02"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/red" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <cn.exz.xugaung.activity.view.MyViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>

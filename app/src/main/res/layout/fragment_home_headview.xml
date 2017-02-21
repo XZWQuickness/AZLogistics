@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+    <cn.exz.xugaung.activity.lunbo.ShufBanner
+        android:id="@+id/shuf"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        />
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_01"
+            style="@style/wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/location_min" />
+
+        <TextView
+            android:id="@+id/tv_location_weather"
+            style="@style/TextView"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_01" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="14sp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/lin_gray" />
+
+        <TextView
+            android:id="@+id/tv_weather"
+            style="@style/TextView"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_01"
+            android:text="当前天气"
+            android:textColor="@color/blueness" />
+    </LinearLayout>
+    <View
+       style="@style/lin"></View>
+
+    <RelativeLayout
+        style="@style/match_wrap"
+        android:background="@color/white"
+        android:padding="22dp">
+
+        <LinearLayout
+
+            style="@style/wrap_content"
+            android:id="@+id/ll_affiche"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/wrap_content"
+                android:background="@drawable/gonggao" />
+
+            <TextView
+                style="@style/TextView"
+                android:layout_marginTop="2dp"
+                android:text="公告消息" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_start_off"
+            style="@style/wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/go" />
+
+        <LinearLayout
+            style="@style/wrap_content"
+            android:id="@+id/ll_tool"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/wrap_content"
+                android:background="@drawable/tool" />
+
+            <TextView
+                style="@style/TextView"
+                android:text="实用工具" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView style="@style/lin" />
+
+    <LinearLayout
+        style="@style/match_wrap"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/lin"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            style="@style/wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/wrap_content"
+
+                android:layout_centerVertical="true"
+                android:layout_margin="2dp"
+                android:background="@drawable/new_order" />
+
+            <TextView
+                style="@style/TextView"
+                android:layout_margin="2dp"
+                android:text="最新订单" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/lin"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_is_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/wrap_content"
+            android:background="@drawable/no_order" />
+
+        <TextView
+            style="@style/TextView"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/iv_01"
+            android:text="您当前还没有相关的订单"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

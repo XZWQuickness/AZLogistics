@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include layout="@layout/top"></include>
+
+    <cn.exz.xugaung.activity.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_user_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_red_gary"
+                android:padding="20dp">
+
+                <!-- border_outside_color 外部圆圈的颜色 -->
+
+                <!-- border_inside_color 内部部圆圈的颜色 -->
+
+                <!-- border_thickness 外圆和内圆的宽度 -->
+                <cn.exz.xugaung.activity.view.RoundImageView
+                    android:id="@+id/iv_head_phto"
+                    android:layout_width="74dp"
+                    android:layout_height="74dp"
+                    imagecontrol:border_inside_color="#E3E3E3"
+                    imagecontrol:border_outside_color="#E3E3E3"
+                    android:background="@drawable/head_photo_min"
+                    imagecontrol:border_thickness="1dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_head_phto"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_nickname"
+                        style="@style/whiteTextView"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="@dimen/textSize_16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_account"
+                        style="@style/whiteTextView"
+                        android:textSize="@dimen/textSize_16"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/xugang"
+                        android:id="@+id/imageView3" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/next_white"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/imageView2" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <include layout="@layout/gary_lin"></include>
+
+            <RelativeLayout
+                android:id="@+id/rl_driver_info"
+                style="@style/witheRelativeLayout">
+
+                <ImageView
+                    android:id="@+id/iv_01"
+                    style="@style/wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/driver" />
+
+                <TextView
+                    style="@style/TextView"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_01"
+                    android:text="司机信息"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    style="@style/wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/next" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/lin_gray"></View>
+
+            <include layout="@layout/gary_lin"></include>
+
+            <RelativeLayout
+                android:id="@+id/rl_car_info"
+                style="@style/witheRelativeLayout">
+
+                <ImageView
+                    android:id="@+id/iv_01_"
+                    style="@style/wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/car" />
+
+                <TextView
+                    style="@style/TextView"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_01_"
+                    android:text="车辆信息"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    style="@style/wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/next" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/lin_gray"></View>
+
+            <RelativeLayout
+                android:id="@+id/rl_feedback_info"
+                style="@style/witheRelativeLayout"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_02"
+                    style="@style/wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/feedback" />
+
+                <TextView
+                    style="@style/TextView"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_02"
+                    android:text="意见反馈"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    style="@style/wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/next" />
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/gary_lin"></include>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:visibility="gone"
+                android:background="@color/lin_gray"></View>
+
+            <RelativeLayout
+                android:id="@+id/rl_fefu_info"
+                style="@style/witheRelativeLayout"
+                android:visibility="gone"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_03"
+                    style="@style/wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/contact" />
+
+                <TextView
+                    style="@style/TextView"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_03"
+                    android:text="联系客服"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    style="@style/wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/next" />
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/gary_lin"></include>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:visibility="gone"
+                android:background="@color/lin_gray"></View>
+
+            <RelativeLayout
+                android:id="@+id/rl_stting_info"
+                style="@style/witheRelativeLayout"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_04"
+                    style="@style/wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/stting" />
+
+                <TextView
+                    style="@style/TextView"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_04"
+                    android:text="设置"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    style="@style/wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/next" />
+
+
+            </RelativeLayout>
+
+            <include layout="@layout/gary_lin"></include>
+
+
+        </LinearLayout>
+
+    </cn.exz.xugaung.activity.view.MyScrollView>
+</LinearLayout>

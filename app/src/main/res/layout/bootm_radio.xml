@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lin_gray"
+        android:paddingTop="8dp" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBFBFB"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_main_1"
+            style="@style/style_main_bottom_rb"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_rb_01"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="主页" />
+
+        <RadioButton
+            android:id="@+id/rb_main_2"
+            style="@style/style_main_bottom_rb"
+            android:drawableTop="@drawable/selector_rb_02"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="订单" />
+
+        <RadioButton
+            android:id="@+id/rb_main_3"
+            style="@style/style_main_bottom_rb"
+            android:drawableTop="@drawable/selector_rb_03"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="我的" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:paddingTop="10dp" />
+
+</LinearLayout>
